@@ -1,0 +1,30 @@
+static
+
+ 1. default position
+ 2. we cann't apply t,r,l,b.
+
+absolute
+
+1. we can apply t,r,l,b
+2. take only content width
+3. remove the space 
+4. it take the parent as a referece, if the parent has other than static position
+
+relative
+1. t,r,l,b
+2. behavior not changed
+3. space not removed
+4. it takes the current position as a referece
+
+fixed 
+1. we can apply t,r,l,b 
+2. take the content width 
+3. remove the spance 
+4. it takes window/viewport as referece
+5. 
+
+sticky
+
+1. we can apply t,r,l,b 
+2. behavior not changed
+3. space not removed

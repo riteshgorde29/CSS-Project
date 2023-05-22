@@ -1,0 +1,24 @@
+
+<h1></h1>
+<script>
+   var id;
+   var flag=true
+   window.addEventListener('resize',function(){
+    if(flag){
+        fnResize()
+        flag=false
+    }
+       clearTimeout(id)
+       id=setTimeout(function(){
+        fnResize()
+       },2000)
+     
+       //
+   })
+
+   function fnResize(){
+    var w=document.body.offsetWidth;
+         document.querySelector('h1').innerText=`Browser width is ${w}`
+   }
+</script>
+

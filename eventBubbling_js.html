@@ -1,0 +1,28 @@
+<style>
+    div{
+        border: 1px solid red;
+        padding:40px
+    }
+</style>
+
+<div id="div1" onclick="f1()">
+    <div id="div2" onclick="f2(event)">
+        <div id="div3" onclick="f3(event)">
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function f1(){
+        alert('div1')
+    }
+    function f2(eve){
+        eve.stopPropagation()
+        alert('div2 1k')
+    }
+    function f3(eve){
+        eve.stopPropagation()
+        alert('100 line div3')
+    }
+</script>

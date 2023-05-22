@@ -1,0 +1,15 @@
+<p>
+    <b>Product Name:</b><input onkeyup="fnGetProducts(event)" />
+</p>
+
+<script>
+    var id;
+    function fnGetProducts(eve){
+        clearTimeout(id)
+        id=setTimeout(function(){
+            var productName=eve.target.value
+            console.log(`sending request to the server ... to get the ${productName}`)
+        },1000)
+    }
+</script>
+

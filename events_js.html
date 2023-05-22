@@ -1,0 +1,23 @@
+
+<!-- <div  onclick="fnClick(event)" style="background-color: yellow;">
+    <button id="btn1">btn1 click</button>
+    <button id="btn2">btn2 click</button>
+</div> -->
+
+<div  style="background-color: yellow;">
+    <button id="btn1">btn1 click</button>
+    <button id="btn2">btn2 click</button>
+</div>
+
+<script>
+    var divRef=document.querySelector('div')
+    divRef.addEventListener('click',fnClick)
+    function fnClick(eve){
+        eve.stopPropagation()
+        const {nodeName,id}=eve.target
+        if(nodeName === 'DIV')return
+        var _id=id
+        alert(`clicked ${_id}`)
+    }
+    
+</script>
